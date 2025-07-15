@@ -1,0 +1,38 @@
+spring:
+  config:
+    {import: optional:classpath:./secret/db.yml}
+  application:
+    name: demo
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+      file-size-threshold: 10MB
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  # 기존 일반 datasource 방식
+  # datasource:
+  #   url: jdbc:log4jdbc:mariadb://np.climbjava.com:3306/pbl
+  #   username: sample
+  #   password: 1234
+  #   driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+
+  # HikariCP 설정
+  datasource:
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      pool-name: HikariCP
+      max-lifetime: 1800000
+      connection-timeout: 20000
+
+mybatis:
+  type-aliases-package: com.climbjava.demo.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
