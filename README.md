@@ -1,10 +1,14 @@
-#Spring_Demo
+# 🌱 Spring_Demo
 
-##25.07.15 
-기존 Servlet (Project Based Learning) Spring Gradle 프로젝트로 변환 
+> 🛠️ 기존 Servlet 기반 프로젝트를 **Spring Gradle 프로젝트**로 변환한 기록
 
-##25.07.16 
-기존 Servlet pbl project Spring Gradle 프로젝트로 변환 완료
-spring_basic 파일 생성 
-- 레거시 자바빈 생성 방법 학습
-issue -> JVM 내 콘솔 일부 한글 깨짐 현상 발생
+---
+
+## 📅 25.07.15  
+🔄 기존 Servlet (Project Based Learning) 프로젝트 → Spring Gradle 프로젝트로 **변환 시작**
+
+---
+
+## 📅 25.07.16  
+✅ 변환 완료!  
+기존 Servlet PBL 프로젝트를 **Spring Gradle 구조**로 마이그레이션 완료 
